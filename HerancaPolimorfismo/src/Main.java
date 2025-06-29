@@ -2,31 +2,37 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        Gerente gerente = new Gerente();
-        Vendendor vendedor = new Vendendor();
-
-/* A classe Gerente acessa os objetos da classe colaborador, porém a classe gerente
+        /* A classe Gerente acessa os objetos da classe colaborador, porém a classe gerente
  possui dois objetos difereentes das demais que são Login e Senha e que não pode ser
  acessado pelas outras classes */
 
-        gerente.setNome(sc.next());
-        gerente.setCodigo(00526);
-        gerente.setLogin("Jeff.Simplicio");
-        gerente.setSenha("123456789");
-
-        vendedor.setNome(sc.next());
-        vendedor.setCodigo(00527);
+        printColaborador(new Gerente());
+        printColaborador(new Vendendor());
 
 
 
 
 
 
+    }
+    public static void printColaborador(Colaborador colaborador){
+
+        System.out.printf("===========%s==========/n", colaborador.getClass().getCanonicalName());
+        if(colaborador instanceof Gerente gerente) {
+            colaborador.setNome("João");
+            ((Gerente) colaborador).setLogin("João");
+            ((Gerente) colaborador).setSenha("123456");
 
 
 
+            System.out.println(colaborador.getNome());
+            System.out.println(((Gerente) colaborador).getLogin());
+            System.out.println(((Gerente) colaborador).getSenha());
+
+
+        }
+
+        System.out.println("=====================");
 
     }
 }

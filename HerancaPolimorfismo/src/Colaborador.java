@@ -1,4 +1,4 @@
-public abstract class Colaborador {
+public sealed abstract class Colaborador permits Gerente, Vendendor{
     private String nome;
     private int codigo;
     private String endereco;

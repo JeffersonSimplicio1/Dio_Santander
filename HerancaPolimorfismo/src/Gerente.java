@@ -1,4 +1,4 @@
-public class Gerente extends Colaborador{
+public non-sealed class Gerente extends Colaborador{
         private String login;
         private String senha;
 
