@@ -2,9 +2,9 @@ package list.OperacoesBasicas;
 
 public class item {
 
-        private  String nome;
-        private Double preco;
-        private Integer quantidade;
+    private  String nome;
+    private Double preco;
+    private Integer quantidade;
 
 
     public item(String nome, Integer quantidade, Double preco) {
@@ -32,5 +32,4 @@ public class item {
 
     public Integer getQuantidade() {
         return quantidade;
-    }
 }

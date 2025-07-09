@@ -31,7 +31,7 @@ public class CarrinhoDeCompras {
         }
 
         public static void main(String[] args) {
-            list.OperacoesBasicas.ListaItens listaItens = new list.OperacoesBasicas.ListaItens();
+            CarrinhoDeCompras listaItens = new CarrinhoDeCompras();
 
             System.out.println("O numero total de itens na lista é: " + listaItens.obterNumeroTotalItens());
             listaItens.adicionarItem("feijão", 2, 5.10);
