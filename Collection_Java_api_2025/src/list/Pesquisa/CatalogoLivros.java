@@ -11,7 +11,7 @@ public class CatalogoLivros {
     }
 
     public void adicionarLivro(String titulo, String autor, int anoPublicacao){
-        livrosList.add(new livrosList(titulo,autor,anoPublicacao));
+        livrosList.add(new Livros(titulo,autor,anoPublicacao));
     }
     public List <Livros> pesquisaPorAutor (String autor) {
         List<Livros> livrosPorAutor = new ArrayList<>();
